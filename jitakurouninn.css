@@ -219,4 +219,8 @@ footer {
         position: static;
         padding: 15px;
     }
+
+    .subject-section .image{
+        display:flex;
+        
 }
