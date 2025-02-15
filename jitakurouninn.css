@@ -1,0 +1,222 @@
+/* 全体のフォントと背景設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: block;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* メインコンテンツを中央揃え */
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #0099cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ヘッダータイトル */
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* ナビゲーションのスタイル */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff66b2;
+}
+
+/* 目次（サイドバー） */
+.toc {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.toc h2 {
+    font-size: 1.5rem;
+    color: #0099cc;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ff66b2;  /* ここにピンクの線を追加 */
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.toc ul li {
+    margin: 10px 0;
+}
+
+.toc ul li a {
+    text-decoration: none;
+    color: #0099cc;
+}
+
+.toc ul li a:hover {
+    text-decoration: underline;
+    color: #ff66b2;
+}
+
+/* 各セクション */
+section {
+    margin-bottom: 40px;
+}
+
+/* セクションタイトル */
+section h3 {
+    font-size: 1.6rem;
+    color: #0099cc;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff66b2;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* セクションリスト */
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* セクションタイトル（大学受験自宅浪人体験談 と まとめ）の中央揃えと文字色を水色に変更 */
+#study-at-home h2,
+#summary h2 {
+    text-align: center;
+    color: #0099cc;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff66b2;  /* ここにピンクの線を追加 */
+}
+
+/* まとめセクションタイトルにピンクの下線を追加 */
+#summary h2 {
+    border-bottom: 2px solid #ff66b2;  /* ピンク色のボーダー */
+    padding-bottom: 5px;
+}
+
+/* サブタイトルと本文の調整 */
+p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* 参考書リンクとセクションのスタイル */
+.subject-section {
+    margin-bottom: 30px;
+}
+
+.subject-section h4 {
+    font-size: 1.4rem;
+    color: #0099cc;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff66b2;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.subject-section ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.subject-section ul li {
+    margin: 15px 0;
+}
+
+.subject-section a {
+    color: #0099cc;
+    text-decoration: none;
+}
+
+.subject-section a:hover {
+    text-decoration: underline;
+    color: #ff66b2;
+}
+
+.subject-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #0099cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .toc {
+        padding: 15px;
+    }
+
+    .subject-section ul {
+        padding-left: 15px;
+    }
+
+    footer {
+        position: static;
+        padding: 15px;
+    }
+}
