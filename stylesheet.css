@@ -68,7 +68,35 @@ main {
   padding: 0 20px;
 }
 
-/* レスポンシブ対応 */
+/* アフィリエイトリンクと画像を並べる */
+.affiliate-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* スマホでも画像とリンクが折り返すように */
+}
+
+.affiliate-container img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.affiliate-link {
+  font-size: 16px;
+  color: #00BFFF;
+  text-decoration: none;
+  font-weight: bold;
+  max-width: 300px; /* リンクの幅を制限 */
+}
+
+.affiliate-link:hover {
+  color: #FF69B4;
+}
+
+/* モバイル表示用レスポンシブデザイン */
 @media (max-width: 768px) {
   nav ul {
     text-align: center;
@@ -82,53 +110,20 @@ main {
   main {
     padding: 0 10px;
   }
-}
 
-/* 画像とアフィリエイトリンクのスタイル */
-.affiliate-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 20px;
-  justify-content: flex-start;
-  flex-wrap: wrap; /* 画像が多くても折り返すように */
-}
-
-.affiliate-container img {
-  max-width: 150px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.affiliate-link {
-  font-size: 16px;
-  color: #00BFFF;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-  max-width: 300px; /* リンクに最大幅を設定 */
-  text-align: left; /* 左寄せ */
-}
-
-.affiliate-link:hover {
-  color: #FF69B4;
-}
-
-/* モバイルでの調整 */
-@media (max-width: 768px) {
   .affiliate-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* スマホで縦に並べる */
+    align-items: center; 
     text-align: center;
   }
 
   .affiliate-container img {
-    max-width: 100%; /* モバイルでは画像を100%表示 */
+    max-width: 100%; /* モバイルでは画像を100%にする */
   }
 
   .affiliate-link {
     max-width: 100%;
-    text-align: center; /* リンクも中央揃え */
+    text-align: center;
   }
 }
 
